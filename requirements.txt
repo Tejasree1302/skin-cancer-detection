@@ -1,0 +1,5 @@
+CNN + ResNet50 → extract and analyze features
+Softmax → classify
+Cross-Entropy → calculate loss
+Adam → optimize learning
+Transfer Learning → improve performance with less data

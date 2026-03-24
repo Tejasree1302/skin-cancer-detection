@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinCareAI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">SkinCareAI</div>
+    <ul>
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero-home">
+  <div class="hero-text">
+    <h1>Detect Skin Cancer Early</h1>
+    <p>AI-powered triage system for early detection of skin cancer types.</p>
+    <ul>
+      <li>Quick & accurate predictions</li>
+      <li>Secure login</li>
+      <li>User-friendly interface</li>
+    </ul>
+    <a href="/predict_page" class="btn-primary">Predict Now</a>
+  </div>
+  <div class="hero-image">
+    <img src="{{ url_for('static', filename='image/doctor.webp') }}" alt="Doctor">
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 SkinCareAI. All rights reserved.</p>
+</footer>
+</body>
+</html>

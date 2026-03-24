@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About SkinCareAI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">SkinCareAI</div>
+      <ul>
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-about">
+    <div class="hero-text">
+      <h1>About SkinCareAI</h1>
+      <p>Our AI-powered Skin Cancer Triage System helps detect skin cancer early, assisting doctors and patients with timely diagnosis.</p>
+    </div>
+    <div class="hero-image">
+      <img src="{{ url_for('static', filename='image/doctor1.jpg') }}" alt="Doctor Image">
+    </div>
+  </section>
+
+  <!-- INFORMATION BOXES -->
+  <section class="about-section">
+    <div class="info-box">
+      <h2>Our Mission</h2>
+      <p>To provide early detection tools for skin cancer, improving survival rates and patient awareness.</p>
+    </div>
+    <div class="info-box">
+      <h2>How It Works</h2>
+      <p>Users can upload images of skin lesions, and our AI model analyzes the image to predict the risk of cancer.</p>
+    </div>
+    <div class="info-box">
+      <h2>Why SkinCareAI?</h2>
+      <p>Accurate, fast, and easy-to-use system that empowers healthcare professionals and patients to take preventive action.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 SkinCareAI. All rights reserved.</p>
+  </footer>
+</body>
+</html>

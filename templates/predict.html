@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Skin Image</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">SkinCareAI</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/predict_page">Predict</a></li>
+        <li><a href="/login">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="predict-section">
+    <h2>Upload Skin Image for Prediction</h2>
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required>
+      <button type="submit" class="btn">Predict</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SkinCareAI. All rights reserved.</p>
+  </footer>
+</body>
+</html>
